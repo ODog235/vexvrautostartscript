@@ -17,7 +17,7 @@ pyautogui.click()
 while tryagain:
     if None != pyautogui.locateCenterOnScreen(r''+ path 'tryagainimage.png'):
         print('Found try again button')
-        pyautogui.screenshot(imageFilename=r''+ path 'tryagainimage.png' + str(image_num) + ".PNG")
+        pyautogui.screenshot(imageFilename=r''+ path + str(image_num) + ".PNG")
         image_num += 1
         pyautogui.moveTo(pyautogui.locateCenterOnScreen(r''+ path 'tryagainimage.png'))
         pyautogui.click()
